@@ -40,6 +40,7 @@ class SignUp extends React.Component{
     }
     handleChange= event=>{
         const{name, value}= event.target;
+        
         this.setState({[name]:value});
     }
 
@@ -64,13 +65,7 @@ class SignUp extends React.Component{
                   onChange={this.handleChange}
                   label='Email'
                   required/>
-                  <FormInput
-                  type='password'
-                  name='Password'
-                  value={password}
-                  onChange={this.handleChange}
-                  label='Password'
-                  required/>
+                  <FormInput name='password' type='password' value={this.state.password} required handleChange={this.handleChange} label='Password'/>
                   <FormInput
                   type='password'
                   name='confirmPassword'
