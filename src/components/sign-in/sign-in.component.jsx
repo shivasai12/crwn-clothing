@@ -27,7 +27,7 @@ class SignIn extends React.Component{
             
         }
         catch(error){
-
+            alert('please enter valid email and password');
         }
 
 
